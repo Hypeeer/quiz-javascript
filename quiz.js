@@ -35,11 +35,11 @@ const questionsAnswers = [
 let userResponse;
 let name = '';
 //Função principal
-const mainManu = () => {
+const mainMenu = () => {
   console.log(`----- Quiz JavaScript -----`);
   console.log(`Seja Bem-vindo jogador(a)!`);
   name = readlineSync.question(`Digite seu nome: `);
-  SystemOfMensage();
+  SystemOfMenssage();
 };
 //Função para gera aleatoriamente perguntas
 const randomQuestions = (arr) => {
@@ -70,21 +70,21 @@ const SystemOfVerificationAndCounter = () => {
   return counter;
 };
 //Função de exibir mensagem final e a pontuação do jogador ao terminar o quiz
-const SystemOfMensage = () => {
+const SystemOfMenssage = () => {
   const score = SystemOfVerificationAndCounter();
   let msg = '';
-  if (score <= 1 || score <= 3) {
+  if (score <= 3) {
     msg += `OH NÃO! tente mais uma vez.`;
   } else if (score <= 6) {
     msg += `BOM TRABALHO! pratique um pouco mais.`;
   } else if (score <= 9) {
     msg += `MUITO BOM! Você acertou a maioria.`;
   } else if (score == 10) {
-    msg += `EXELENTE! você e um verdadeiro expert.`;
+    msg += `EXCELENTE! você e um verdadeiro expert.`;
   }
   console.log(`Jogado(a): ${name}`);
-  console.log(`Pontuação final: ${score}`);
+  console.log(`Pontuação final: ${score}\n`);
   console.log(`${msg}`);
 };
 
-mainManu();
+mainMenu();
