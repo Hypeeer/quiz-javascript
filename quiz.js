@@ -1,4 +1,4 @@
-import option, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 //Coleções de perguntas sobre JS
 const questionsAnswers = [
   { id: 1, question: 'Em que ano o JavaScript foi criado? (a) 1995 (b) 1990 (c) 2005', answers: 'a' },
@@ -32,12 +32,14 @@ const questionsAnswers = [
   { id: 29, question: 'Qual a diferença entre null e undefined? (a) Ambos são iguais (b) null é atribuído, undefined é padrão (c) undefined é uma função', answers: 'b' },
   { id: 30, question: 'Como você mescla dois arrays em JavaScript? (a) merge (b) concat (c) join', answers: 'b' },
 ];
-let opts;
+let userResponse;
+let name = '';
 
 const mainManu = () => {
   console.log(`----- Quiz JavaScript -----`);
   console.log(`Seja Bem-vindo jogador(a)!`);
-  let name = option.question('Digite seu nome: ');
+  name = readlineSync.question(`Digite seu nome: `);
+  SystemOfMensage();
 };
 
 //Função para gera aleatoriamente perguntas
@@ -54,16 +56,32 @@ const SystemOfVerificationAndCounter = () => {
   let counter = 0;
   tenQuestions.forEach((item) => {
     console.log(`\n${item.id} - ${item.question}`);
-    opts = option.question(`Digite a resposta: `);
-    if (opts === item.answers) {
+    userResponse = readlineSync.question(`Digite a resposta: `);
+    if (userResponse === item.answers) {
       console.log('Resposta Correta!\n');
       counter++;
     } else {
       console.log('Resposta Errada!\n');
     }
   });
-  console.log(counter);
+  return counter;
+};
+
+const SystemOfMensage = () => {
+  const score = SystemOfVerificationAndCounter();
+  let msg = '';
+  if (score <= 1 || score <= 3) {
+    msg += `OH NÃO! tente mais uma vez.`;
+  } else if (score <= 6) {
+    msg += `BOM TRABALHO! pratique um pouco mais.`;
+  } else if (score <= 9) {
+    msg += `MUITO BOM! Você acertou a maioria.`;
+  } else if (score == 10) {
+    msg += `EXELENTE! você e um verdadeiro expert.`;
+  }
+  console.log(`Jogado(a): ${name}`);
+  console.log(`Pontuação final: ${score}`);
+  console.log(`${msg}`);
 };
 
 mainManu();
-SystemOfVerificationAndCounter();
