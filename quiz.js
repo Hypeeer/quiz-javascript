@@ -34,17 +34,20 @@ const questionsAnswers = [
 ];
 let userResponse;
 let name = '';
-
+//Função principal
 const mainManu = () => {
   console.log(`----- Quiz JavaScript -----`);
   console.log(`Seja Bem-vindo jogador(a)!`);
   name = readlineSync.question(`Digite seu nome: `);
   SystemOfMensage();
 };
-
 //Função para gera aleatoriamente perguntas
 const randomQuestions = (arr) => {
-  return arr.sort(() => Math.random() - 0.5); //callBack
+  const newArr = arr.sort(() => Math.random() - 0.5); //callBack
+  return newArr.map((item, index) => ({
+    ...item, //spread operator ("espalha ou copia os elementos para outros array ou objetos")
+    id: index + 1, // propriedade do novo objeto
+  }));
 };
 //Função para seleciona apenas 10 peguntas aleatorias
 const selectTen = () => {
@@ -66,7 +69,7 @@ const SystemOfVerificationAndCounter = () => {
   });
   return counter;
 };
-
+//Função de exibir mensagem final e a pontuação do jogador ao terminar o quiz
 const SystemOfMensage = () => {
   const score = SystemOfVerificationAndCounter();
   let msg = '';
