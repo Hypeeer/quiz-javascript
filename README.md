@@ -15,14 +15,15 @@ comando: node quiz.js
 
 ## Como instalar o Node.js
 
-Passo 1: Baixar o Instalador
+**Passo 1**: Baixar o Instalador
 Acesse o site oficial do Node.js.
 Você verá duas versões disponíveis para download:
 LTS (Long Term Support): Recomendado para a maioria dos usuários.
 Current: Para desenvolvedores que desejam usar a versão mais recente.
 Clique no botão correspondente à versão que deseja baixar. O arquivo do instalador será baixado.
 
-Passo 2: Executar o Instalador
+**Passo 2**: Executar o Instalador
+
 Localize o arquivo do instalador que você baixou (normalmente na pasta "Downloads").
 Clique duas vezes no arquivo para executá-lo.
 Siga as instruções do assistente de instalação:
@@ -30,7 +31,8 @@ Aceite os termos de licença.
 Escolha a pasta de instalação (pode deixar o padrão).
 Certifique-se de que a opção "Add to PATH" (Adicionar ao PATH) esteja selecionada. Isso facilita a execução do Node.js no terminal.
 
-Passo 3: Verificar a Instalação
+**Passo 3**: Verificar a Instalação
+
 Abra o terminal (Prompt de Comando no Windows, Terminal no macOS ou Linux).
 
 Digite o seguinte comando e pressione Enter:
@@ -42,7 +44,7 @@ Para verificar se o npm (Node Package Manager) foi instalado corretamente, digit
 npm -v
 Isso deve exibir a versão do npm.
 
-Passo 4: Executar o Quiz
+**Passo 4**: Executar o Quiz
 
 Baixe o arquivo 'quiz.js' do repositório.
 No terminal, navegue até o diretório onde o arquivo quiz.js está localizado.
