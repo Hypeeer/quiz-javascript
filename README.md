@@ -16,7 +16,9 @@ comando: node quiz.js
 ## Como instalar o Node.js
 
 **Passo 1**: Baixar o Instalador
+
 Acesse o site oficial do Node.js.
+
 Você verá duas versões disponíveis para download:
 LTS (Long Term Support): Recomendado para a maioria dos usuários.
 Current: Para desenvolvedores que desejam usar a versão mais recente.
