@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import questionsAnswers from './datas.js';
+import questionsAnswers from './datas.js'; //faz o import do arquivo datas.js
 
 let userResponse;
 let name = '';

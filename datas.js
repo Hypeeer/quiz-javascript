@@ -32,4 +32,4 @@ const questionsAnswers = [
   { id: 30, question: 'Como você mescla dois arrays em JavaScript? (a) merge (b) concat (c) join', answers: 'b' },
 ];
 
-export default questionsAnswers;
+export default questionsAnswers; // faz o export do question para o arquivo principal main.js
