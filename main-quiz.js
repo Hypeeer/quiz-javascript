@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-import SystemOfMenssage from "./funcoes/funcaos.js"; //Importa a saida da função
+import SystemOfMenssage from "./interface/funcaos.js"; //Importa a saida da função
 
 //Função principal
 const mainMenu = () => {

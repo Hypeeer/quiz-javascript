@@ -1,4 +1,4 @@
-import questionsAnswers from "../datas/datas.js"; //faz o import do arquivo datas.js
+import questionsAnswers from "../database/datas.js"; //faz o import do arquivo datas.js
 import readlineSync from "readline-sync";
 
 //Função para gera aleatoriamente perguntas
