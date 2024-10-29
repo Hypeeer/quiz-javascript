@@ -1,5 +1,5 @@
 //Coleções de perguntas sobre JS
-const questionsAnswers = [
+const questionJavaScript = [
   { id: 1, question: 'Em que ano o JavaScript foi criado? (a) 1995 (b) 1990 (c) 2005', answers: 'a' },
   { id: 2, question: 'Qual empresa desenvolveu o JavaScript? (a) Microsoft (b) Netscape (c) Google', answers: 'b' },
   { id: 3, question: 'Qual o nome original do JavaScript? (a) Mocha (b) Java (c) LiveScript', answers: 'a' },
@@ -32,4 +32,37 @@ const questionsAnswers = [
   { id: 30, question: 'Como você mescla dois arrays em JavaScript? (a) merge (b) concat (c) join', answers: 'b' },
 ];
 
-export default questionsAnswers; // faz o export do question para o arquivo principal main.js
+const questionNodeJS = [
+  { id: 1, question: 'O que é Node.js? (a) Um framework frontend (b) Um ambiente de execução JavaScript no lado do servidor (c) Uma biblioteca JavaScript', answers: 'b' },
+  { id: 2, question: 'Qual comando é utilizado para instalar pacotes no Node.js? (a) npm install (b) node install (c) install npm', answers: 'a' },
+  { id: 3, question: 'Qual módulo do Node.js é usado para manipulação de arquivos? (a) http (b) fs (c) express', answers: 'b' },
+  { id: 4, question: 'Qual comando inicializa um projeto Node.js? (a) npm start (b) npm init (c) node init', answers: 'b' },
+  { id: 5, question: 'Qual é o arquivo de entrada padrão de um projeto Node.js? (a) app.js (b) index.js (c) main.js', answers: 'b' },
+  { id: 6, question: 'Qual método é usado para criar um servidor HTTP no Node.js? (a) createServer (b) http.createServer (c) server.create', answers: 'b' },
+  { id: 7, question: 'O que o comando "npm update" faz? (a) Instala pacotes (b) Atualiza pacotes instalados (c) Remove pacotes', answers: 'b' },
+  { id: 8, question: 'Qual é o propósito do arquivo package.json? (a) Armazenar dependências e scripts do projeto (b) Definir variáveis de ambiente (c) Criar um servidor', answers: 'a' },
+  { id: 9, question: 'Qual dos seguintes é um framework popular para Node.js? (a) Angular (b) React (c) Express', answers: 'c' },
+  { id: 10, question: 'Qual comando executa um arquivo JavaScript com Node.js? (a) node run filename.js (b) node filename.js (c) run node filename.js', answers: 'b' },
+  { id: 11, question: 'Como você lê um arquivo usando o módulo fs? (a) fs.readFileSync() (b) fs.read() (c) fs.fileRead()', answers: 'a' },
+  { id: 12, question: 'O que é um callback em Node.js? (a) Uma função que é chamada depois de outra (b) Um tipo de erro (c) Um comando de terminal', answers: 'a' },
+  { id: 13, question: 'O que faz o método array.forEach() em JavaScript? (a) Retorna um novo array (b) Executa uma função para cada elemento (c) Filtra elementos', answers: 'b' },
+  { id: 14, question: 'Qual é a diferença entre require e import em Node.js? (a) require é usado para módulos CommonJS e import é usado para ES6 (b) require é mais rápido (c) Não há diferença', answers: 'a' },
+  { id: 15, question: 'O que é o Event Loop no Node.js? (a) Uma estrutura de dados (b) Um mecanismo que gerencia operações assíncronas (c) Um módulo interno', answers: 'b' },
+  { id: 16, question: 'Qual é a função de middleware no Express? (a) Adicionar funcionalidades a um servidor (b) Redirecionar URLs (c) Manipular pacotes', answers: 'a' },
+  { id: 17, question: 'Qual dos seguintes não é um método do módulo fs? (a) readFile (b) writeFile (c) deleteFile', answers: 'c' },
+  { id: 18, question: 'Qual comando remove um pacote do projeto? (a) npm delete (b) npm remove (c) npm uninstall', answers: 'c' },
+  { id: 19, question: 'O que o método Promise.all() faz? (a) Executa várias promessas em paralelo (b) Espera por uma única promessa (c) Cancela promessas', answers: 'a' },
+  { id: 20, question: 'Como você manipula erros em uma promessa? (a) try/catch (b) .catch() (c) .error()', answers: 'b' },
+  { id: 21, question: 'Qual é a extensão padrão para módulos Node.js? (a) .js (b) .node (c) .json', answers: 'a' },
+  { id: 22, question: 'Como você inicia um servidor Express? (a) express.start() (b) app.listen() (c) server.start()', answers: 'b' },
+  { id: 23, question: 'O que é o módulo path em Node.js? (a) Para manipulação de URLs (b) Para manipulação de caminhos de arquivos (c) Para gerenciar pacotes', answers: 'b' },
+  { id: 24, question: 'O que faz o método res.send() no Express? (a) Envia uma resposta para o cliente (b) Envia dados para o banco de dados (c) Envia um arquivo', answers: 'a' },
+  { id: 25, question: 'Qual método é usado para verificar se um servidor está ouvindo? (a) isListening() (b) listen() (c) onListen()', answers: 'b' },
+  { id: 26, question: 'O que é o npm? (a) Um servidor (b) Um gerenciador de pacotes (c) Um banco de dados', answers: 'b' },
+  { id: 27, question: 'Qual é o comando para iniciar o servidor de desenvolvimento com Express? (a) npm start (b) node start (c) express start', answers: 'a' },
+  { id: 28, question: 'Qual dos seguintes é um tipo de erro em Node.js? (a) ReferenceError (b) SyntaxException (c) FileError', answers: 'a' },
+  { id: 29, question: 'Qual é o formato padrão para o arquivo de configuração do npm? (a) npm.json (b) package.json (c) config.json', answers: 'b' },
+  { id: 30, question: 'Como você faz um servidor ouvir em uma porta específica? (a) server.listen(port) (b) app.listen(port) (c) listen.server(port)', answers: 'b' },
+];
+
+export { questionJavaScript, questionNodeJS }; // faz o export do question para o arquivo principal main.js
